@@ -37,29 +37,36 @@ h2 {
 
 section {
     padding: 20px;
-    margin: 30px;
+    margin: 20px;
     background-color: #fff;
 }
 
 #hero {
-    margin: 100px;
+    /* margin: 100px; */
     position: relative;
     text-align: center;
 }
 
 .hero-img {
-    width: 50%;
+    width: 100%;
     height: auto;
+    display: block;
 }
 
 .hero-text {
     position: absolute;
     top: 50%;
+    margin-top: 300px;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.hero-text h2{
+    color: wheat;
 }
 
 table {
