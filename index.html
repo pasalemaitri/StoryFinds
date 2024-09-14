@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book reviews and recommendations website.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/books.png">
+    <title>StoryFinds - Reviews & Recommendations</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>StoryFinds</h1>
+        <p>Discover your next favorite book!</p>
+        <nav>
+            <ul>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#genres">Genres</a></li>
+                <li><a href="#submit-review">Submit Review</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- Hero Section -->
+     <section id="hero">
+        <img src="assets/bookshelf.jpg" alt="Bookshelf" class="hero-img">
+        <div class="hero-text">
+            <h2>Find Your Next Favorite Book</h2>
+            <p>Explore reviews and recommendations across various genres</p>
+            <button onclick="window.location.href='#reviews'">Explore Reviews</button>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2>Latest Book Reviews</h2>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Review Summary</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>Harry Potter and the Philosopher’s Stone</td>
+                <td>J.K. Rowling</td>
+                <td>The book introduces readers to the magical world of Hogwarts and follows young Harry Potter as he discovers he is a wizard.</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>The Silent Patient</td>
+                <td>Alex Michaelides</td>
+                <td>A psychological thriller about a woman who stops speaking after her husband’s murder.</td>
+                <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>The Hobbit</td>
+                <td>J.R.R. Tolkien</td>
+                <td>A hobbit embarks on an adventure to reclaim treasure from a dragon, discovering courage and friendship.</td>
+                <td>⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>The Alchemist</td>
+                <td>Paulo Coelho</td>
+                <td>A young shepherd's journey to find treasure leads him to discover life's deeper meaning.</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>The Lord of the Rings</td>
+                <td>J.R.R. Tolkien</td>
+                <td>A hobbit embarks on a perilous quest to destroy a powerful ring and save Middle-earth.</td>
+                <td>⭐⭐⭐⭐</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Genres Section -->
+    <section id="genres">
+        <h2>Browse by Genre</h2>
+        <ul>
+            <li><a href="#fiction">Fiction</a></li>
+            <li><a href="#non-fiction">Non-fiction</a></li>
+            <li><a href="#mystery">Mystery & Thriller</a></li>
+            <li><a href="#fantasy">Fantasy</a></li>
+        </ul>
+        <details>
+            <summary>More Genres</summary>
+            <ul>
+                <li><a href="#romance">Romance</a></li>
+                <li><a href="#historical">Historical</a></li>
+                <li><a href="#science-fiction">Science Fiction</a></li>
+            </ul>
+        </details>
+    </section>
+
+    <!-- Submit Review Section -->
+    <section id="submit-review">
+        <h2>Submit Your Own Review</h2>
+        <form action="mailto:booknook@example.com" method="post" enctype="text/plain">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="book-title">Book Title:</label>
+            <input type="text" id="book-title" name="book-title" required><br><br>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required><br><br>
+
+            <label for="review">Your Review:</label><br>
+            <textarea id="review" name="review" rows="4" cols="50"></textarea><br><br>
+
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+
+            <input type="submit" value="Submit Review">
+        </form>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+        <h2>Featured Media</h2>
+        <h3>Audio Sample</h3>
+        <audio controls>
+            <source src="assets/book-excerpt.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Book Trailer</h3>
+        <video controls width="600">
+            <source src="assets/book-trailer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Get in touch with us:</p>
+        <p><a href="tel:+1234567890">Call Us</a></p>
+        <p><a href="mailto:storyfinds@gmail.com">Email Us</a></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 StoryFinds. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
